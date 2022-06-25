@@ -23,7 +23,6 @@ jobs:
         npm install
     - name: Production Build
       run: |
-        unset CI
         npm run build
     # - name: Unit Tests
       # run: |

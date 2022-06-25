@@ -2,7 +2,7 @@ import { FaAward, FaUsers } from 'react-icons/fa';
 import { VscFolderLibrary } from 'react-icons/vsc';
 import { NavHashLink } from 'react-router-hash-link';
 
-import Kayak from '../../assets/myImages/kayak.jpg';
+import Kayak2 from '../../assets/myImages/kayak2.jpg';
 import { useScrollSpy } from '../../utils/scrollspy';
 import './About.css';
 
@@ -35,7 +35,7 @@ const About = () => {
         <div className='about__container'>
           <div className='about__me'>
             <div className='about__me-image'>
-              <img src={Kayak} alt='about' />
+              <img src={Kayak2} alt='about' />
             </div>
           </div>
 

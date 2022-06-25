@@ -1,4 +1,4 @@
-test yaml, aws, github actions
+test yaml, aws, github actions. test codepipeline.
 
 Notes:
 Setting a bg image in css caused a lot of problems (again). For a long time I thought I was usuing a wrong link or that I had to put the image inside the public folder. It turned out the relative path I was using was correct but other properties were not set causing the img to to not be visible on screen. here is a blue print:

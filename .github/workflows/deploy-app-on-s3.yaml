@@ -24,7 +24,7 @@ jobs:
       - name: Build Application
         run: npm run build
       - uses: jakejarvis/s3-sync-action@master
-        name: Upload App to S3 Bucket
+      - name: Upload App to S3 Bucket
         with:
           args: --follow-symlinks --delete
         env:
@@ -32,11 +32,11 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: 'ap-southeast-1'
-          SOURCE_DIR: 'dist'
+          SOURCE_DIR: 'build'
       - name: Create CloudFront Cache Invalidation
         uses: chetan/invalidate-cloudfront-action@master
         env:
-          DISTRIBUTION: ${{ env.AWS_CF_EHHM1WRX872Q3 }}
+          DISTRIBUTION: ${{ AWS_CF_DISTRIBUTION_ID }}
           PATHS: '/*'
           AWS_REGION: 'eu-central-1'
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

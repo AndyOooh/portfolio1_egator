@@ -53,6 +53,9 @@ const SkillsCloud = () => {
     'MVC',
     'Webflow',
     'JSON',
+    'YAML',
+    'GitHub Actions',
+    'EC2'
   ];
 
   useEffect(() => {

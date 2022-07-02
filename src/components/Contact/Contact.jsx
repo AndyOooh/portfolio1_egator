@@ -2,8 +2,8 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 import { MdOutlineEmail } from 'react-icons/md';
-import { RiMessengerLine } from 'react-icons/ri';
-import { BsWhatsapp } from 'react-icons/bs';
+import { RiMessengerLine, RiLinkedinBoxLine } from 'react-icons/ri';
+import { BsWhatsapp, BsLinkedin } from 'react-icons/bs';
 
 import { useScrollSpy } from '../../utils/scrollspy';
 import './Contact.css';
@@ -37,10 +37,10 @@ const Contact = () => {
       link: 'mailto:dummy@dummy.com',
     },
     {
-      media: 'Messenger',
-      icon: <RiMessengerLine className='contact__option-icon' />,
-      h5: 'andy ohhh',
-      link: 'http://m.me/profile.php?id=722600315',
+      media: 'LinkedIn',
+      icon: <RiLinkedinBoxLine className='contact__option-icon' />,
+      h5: 'andreas oee',
+      link: 'https://www.linkedin.com/in/andreas-oee/',
     },
     {
       media: 'WhatsApp',

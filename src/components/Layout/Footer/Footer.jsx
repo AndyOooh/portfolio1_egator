@@ -1,5 +1,5 @@
-import { SiCodewars } from 'react-icons/si';
-import { BsLinkedin, BsDribbble } from 'react-icons/bs';
+import { SiCodewars, SiCodesandbox } from 'react-icons/si';
+import { BsLinkedin, BsGithub, BsStackOverflow } from 'react-icons/bs';
 
 import './Footer.jsx.css';
 
@@ -31,14 +31,20 @@ const Footer = () => {
       </ul>
 
       <div className='footer__socials'>
-        <a href='https://www.linkedin.com/in/andreas-oee/' target='_blank' rel='noreferrer'>
-          <BsLinkedin />
+        <a href='https://github.com/AndyOooh' target='_blank' rel='noreferrer'>
+          <BsGithub />
+        </a>
+        <a href='https://stackoverflow.com/users/12930072/andyoh' target='_blank' rel='noreferrer'>
+          <BsStackOverflow />
         </a>
         <a href='https://www.codewars.com/users/AndyOooh' target='_blank' rel='noreferrer'>
           <SiCodewars />
         </a>
-        <a href='https://dribbble.com/AndyOh' target='_blank' rel='noreferrer'>
-          <BsDribbble />
+        <a href='https://codesandbox.io/u/AndyOooh' target='_blank' rel='noreferrer'>
+          <SiCodesandbox />
+        </a>
+        <a href='https://www.linkedin.com/in/andreas-oee/' target='_blank' rel='noreferrer'>
+          <BsLinkedin />
         </a>
       </div>
 

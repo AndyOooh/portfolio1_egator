@@ -6,32 +6,24 @@
 }
 
 .slick-slider {
-  margin: 1rem auto;
+  margin: 0 auto;
   width: 80%;
-  aspect-ratio: 16/11;
-  height: 150%;
+  aspect-ratio: 16/10;
   overflow-x: hidden;
 }
 
 .slick-list {
-  overflow-x: hidden;
-  overflow-y: visible;
   overflow: visible;
   margin: auto 0;
   top: 19%;
-  transform: translateY(-100%);
-  height: 50%;
 }
 
 .slick-slide {
   position: relative;
-  z-index: 1;
-  width: 15rem;
 }
 
 .slide {
   transform: scale(0.8);
-  transition: transform 00ms;
   opacity: 0.5;
   cursor: pointer;
 }
@@ -47,9 +39,7 @@
 
 .activeSlide {
   transform: scale(1.5);
-  z-index: 10;
-  opacity: 1;
-  cursor: default;
+ 
 }
 
 /* original */
@@ -62,12 +52,15 @@
   background: var(--color-bg-variant);
   padding: 1.2rem;
   border-radius: 2rem;
-  transition: var(--transition);
 }
 
 .portfolio__item:hover {
   background: var(--color-bg-variant);
   border: 1px solid var(--color-primary-variant);
+}
+
+.portfolio__item img {
+  aspect-ratio: 16/10;
 }
 
 .portfolio__item h3 {

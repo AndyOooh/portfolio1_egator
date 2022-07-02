@@ -107,6 +107,24 @@
 
 /* ---------------------------------- MEDIA QUERIES (SMALL DEVICES) -------------------- */
 
+@media screen and (max-width: 800px) {
+  .about__cards {
+    /* grid-template-columns: 1fr; */
+    gap: 1rem;
+    /* width: 80%; */
+    margin: 3rem auto;
+  }
+
+  .about__card {
+    padding: 0.5rem;
+  }
+
+  .about__icon {
+    margin-bottom: 0.25rem;
+  }
+
+}
+
 @media screen and (max-width: 600px) {
   .about__me {
     width: 65%;
@@ -114,9 +132,10 @@
   }
 
   .about__cards {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr;
+    width: 50%;
   }
+  
 
   .about__content {
     text-align: center;

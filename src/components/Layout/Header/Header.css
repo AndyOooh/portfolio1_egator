@@ -12,6 +12,40 @@ header {
   flex-direction: column;
 }
 
+/* Me */
+
+@keyframes example {
+  from {
+    transform: translateX(50%);
+    color: red;
+  }
+  to {
+    transform: translateX(0);
+    color: yellow;
+  }
+}
+
+.my-name {
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example2 {
+  from {
+    transform: translateY(50%);
+    color: red;
+  }
+  to {
+    transform: translateY(0);
+    color: yellow;
+  }
+}
+
+
+.full-stack {
+  animation-name: example2;
+  animation-duration: 4s;
+}
 /* ---------------- CTA --------------------------- */
 
 .cta {
@@ -73,10 +107,7 @@ header {
 /* ---------------- ME (image) --------------------------- */
 
 .me {
-  /* border: 1px solid yellow; */
-  /* background: linear-gradient(transparent 20%, var(--color-primary)),
-    url('../../../assets//myImages/profile-transparent.png'); */
-    background: radial-gradient(transparent 30%, var(--color-primary)),
+  background: radial-gradient(transparent 30%, var(--color-primary)),
     url('../../../assets//myImages/profile-transparent.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -84,9 +115,7 @@ header {
 
   width: 22rem;
   margin-top: 4rem;
-  /* border-radius: 12rem 12rem 0 0; */
   border-radius: 15rem;
-  /* overflow: hidden; */
 }
 
 /* ---------------------------------- MEDIA QUERIES (MEDIUM DEVICES) -------------------- */

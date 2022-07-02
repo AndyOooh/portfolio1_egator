@@ -9,12 +9,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import './Testimonials.css';
-import Img2 from '../../assets/images/avatar2.jpg';
-import Img3 from '../../assets/images/avatar3.jpg';
-import Img4 from '../../assets/images/avatar4.jpg';
-
 import Kasper1Img from '../../assets/myImages/kasper1.png';
+import Img1 from '../../assets/images/avatar1.jpg';
+import './Testimonials.css';
 
 const Testimonials = () => {
   const testimonialsArray = [
@@ -27,44 +24,40 @@ const Testimonials = () => {
       text2: "Andreas never delivers sub-optimal work. He's efficient and adapts quickly",
     },
     {
-      image: Img2,
+      image: Img1,
       altText: 'avatar two',
       name: 'Ernest Achiever',
-      job: '- CEO, Kandio.io',
+      job: 'CFO, Achiever.com',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
     },
-    {
-      image: Img3,
-      altText: 'avatar three',
-      job: 'CEO, Kandio.io',
-      name: 'Ernest Achiever',
-      text: 'Molestias explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias explicabo',
-    },
-    {
-      image: Img4,
-      altText: 'avatar four',
-      job: 'CEO, Kandio.io',
-      name: 'Ernest Achiever',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias explicabo',
-    },
+    // {
+    //   image: Img3,
+    //   altText: 'avatar three',
+    //   job: 'CEO, Kandio.io',
+    //   name: 'Ernest Achiever',
+    //   text: 'Molestias explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias explicabo',
+    // },
+    // {
+    //   image: Img4,
+    //   altText: 'avatar four',
+    //   job: 'CEO, Kandio.io',
+    //   name: 'Ernest Achiever',
+    //   text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias explicabo',
+    // },
   ];
 
   const testimonials = testimonialsArray.map(({ image, altText, job, name, text }, index) => {
     return (
-      // <article className='testimonial' key={index}>
       <SwiperSlide className='testimonial' key={index}>
         <div className='client__avatar'>
           <img src={image} alt={altText} />
         </div>
-        {/* <h5 className='client__name'>{name}</h5>
-        <h6>{job}</h6> */}
         <h5 className='client__name'>
           {name} <span>{job}</span>
         </h5>
 
         <small className='client__review'>{`" ${text} "`}</small>
       </SwiperSlide>
-      // </article>
     );
   });
 

@@ -18,12 +18,12 @@ const About = () => {
           <article className='about__card'>
             <FaAward className='about__icon' />
             <h5>Experience</h5>
-            <small>2+ years</small>
+            <small>1+ years</small>
           </article>
           <article className='about__card'>
             <FaUsers className='about__icon' />
             <h5>Clients</h5>
-            <small>10+</small>
+            <small>5+</small>
           </article>
           <article className='about__card'>
             <VscFolderLibrary className='about__icon' />
@@ -47,10 +47,10 @@ const About = () => {
               at home in the 'big mango' with my <span>girlfriend</span> and the international
               community I'm a part of. <br />
               <br />
-              <span>My interest</span> in web development began in <span>2020</span> when I
-              couldn't find the tools I needed for my <span>crypto</span> projects. After playing
-              around with different APIs in the backend, the frontend quickly caught my interest as
-              well. <br /> <br />
+              <span>My interest</span> in web development began in <span>2020</span> when I couldn't
+              find the tools I needed for my <span>crypto</span> projects. After playing around with
+              different APIs in the backend, the frontend quickly caught my interest as well. <br />{' '}
+              <br />
               <span>Fast-forward</span> to today, and I’ve completed dozens of courses, personal
               projects and a few collaborations. My main focus these days is the <span>MERN</span>{' '}
               stack and <span>AWS</span>. <br />

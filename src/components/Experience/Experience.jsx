@@ -103,7 +103,7 @@ const Experience = () => {
         </div>
       </div>
 
-      <div className='experience__current'>
+      <div className='container experience__current'>
         <h4 className='h4'>I'm currently learning</h4>
         <div className='experience__logos'>
           <div className='experience__current__item'>
@@ -120,7 +120,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-      <div className='experience__cloud'>
+      <div className='container experience__cloud'>
         <h4 className='h4'>Technologies I've had my hands on</h4>
         <SkillsCloud />
       </div>

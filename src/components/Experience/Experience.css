@@ -28,7 +28,7 @@
 .experience__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 1rem;
+  gap: 1rem 0.5rem;
 }
 
 .experience__details {
@@ -99,6 +99,10 @@ span {
     padding: 1rem;
   }
 
+  .experience__logos {
+    gap: 2rem;
+  }
+
   .experience__current h4 {
     margin-top: 3rem;
   }
@@ -113,7 +117,19 @@ span {
 
   .experience__container > div {
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
     margin: 0 auto;
+  }
+
+  .experience__container h4 {
+    font-size: 0.8rem;
+  }
+
+  .experience__container small {
+    font-size: 0.6rem;
+  }
+
+  .experience__logos {
+    gap: 0.5rem;
   }
 }

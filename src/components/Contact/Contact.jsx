@@ -56,7 +56,9 @@ const Contact = () => {
         {icon}
         <h4>{media}</h4>
         <h5>{h5}</h5>
-        <a href={link}>Send a message</a>
+        <a href={link} target='_blank'>
+          Send a message
+        </a>
       </article>
     );
   });

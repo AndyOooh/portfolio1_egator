@@ -121,7 +121,7 @@ const Experience = () => {
         </div>
       </div>
       <div className='container experience__cloud'>
-        <h4 className='h4'>Technologies I've had my hands on</h4>
+        <h4 className='h4'>Technologies I've used</h4>
         <SkillsCloud />
       </div>
     </section>

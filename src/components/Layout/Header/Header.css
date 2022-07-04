@@ -16,24 +16,22 @@ header {
 
 @keyframes example {
   from {
-    transform: translateX(50%);
-    color: red;
+    color: yellow;
   }
   to {
-    transform: translateX(0);
-    color: yellow;
+    /* color: red; */
   }
 }
 
 .my-name {
   animation-name: example;
-  animation-duration: 4s;
+  animation-duration: 6s;
 }
 
 @keyframes example2 {
   from {
-    transform: translateY(50%);
-    color: red;
+    transform: translateY(-900%);
+    color: #fff;
   }
   to {
     transform: translateY(0);
@@ -41,10 +39,12 @@ header {
   }
 }
 
-
 .full-stack {
+  display: inline-block;
   animation-name: example2;
-  animation-duration: 4s;
+  animation-duration: 6s;
+  color: yellow;
+  z-index: 10;
 }
 /* ---------------- CTA --------------------------- */
 

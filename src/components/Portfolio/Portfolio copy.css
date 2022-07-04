@@ -39,7 +39,6 @@
 
 .activeSlide {
   transform: scale(1.5);
- 
 }
 
 /* original */
@@ -59,8 +58,9 @@
   border: 1px solid var(--color-primary-variant);
 }
 
-.portfolio__item img {
-  aspect-ratio: 16/10;
+.portfolio__item img, .portfolio__item video {
+  /* aspect-ratio: 16/10; */
+  object-fit: contain;
 }
 
 .portfolio__item h3 {

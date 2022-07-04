@@ -40,7 +40,6 @@ export const myTags = [
   'Context API',
   'sessions',
   'prop-types',
-  'redux-thunk',
   'CORS',
   'Font Awesome',
   'Sqlite',

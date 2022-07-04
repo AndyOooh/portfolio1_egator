@@ -48,12 +48,16 @@ const Portfolio = () => {
       title: 'portf item 3',
       gitHub: 'https://github.com/AndyOooh/portfolio',
       liveDemo: 'https://dribbble.com/Alien_pixels',
+      type: 'Full Stack',
+      technologies: 'NodeJS React ExpressJS MongoDB AWS NGINX',
     },
     {
       image: Img1,
       title: 'portf item 4',
       gitHub: 'https://github.com/AndyOooh/portfolio',
       liveDemo: 'https://dribbble.com/Alien_pixels',
+      type: 'Full Stack',
+      technologies: 'NodeJS React ExpressJS MongoDB AWS NGINX',
     },
   ];
 

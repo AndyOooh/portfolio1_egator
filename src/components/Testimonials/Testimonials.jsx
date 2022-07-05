@@ -9,6 +9,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
+import Anders1Img from '../../assets/myImages/anders.jpg';
 import Kasper1Img from '../../assets/myImages/kasper1.png';
 import Img1 from '../../assets/images/avatar1.jpg';
 import './Testimonials.css';
@@ -20,15 +21,15 @@ const Testimonials = () => {
       altText: 'kasper',
       name: 'Kasper Dam',
       job: '- CEO, Kandio.io',
-      text: "I have been fortunate to work with Andreas on a few different projects, among others Kandio. He's a fast learner and well-organised",
       text2: "Andreas never delivers sub-optimal work. He's efficient and adapts quickly",
+      text: 'I’ve known Andreas since 2017, and have been fortunate to enjoy his reliable and consistent demeanor in both business and private. Andreas is the kind of person who is never late, delivers on time, and asks when in doubt.',
     },
     {
-      image: Img1,
-      altText: 'avatar two',
-      name: 'Ernest Achiever',
-      job: 'CFO, Achiever.com',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
+      image: Anders1Img,
+      altText: 'Anders Ethnophere',
+      name: 'Anders Klostergaard',
+      job: 'CEO, Ethnophere CO. Ltd.',
+      text: 'Andreas is self-motivated, attentive to detail, and skilled at both independent and collaborative work',
     },
     // {
     //   image: Img3,

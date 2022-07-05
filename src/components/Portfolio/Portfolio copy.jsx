@@ -26,7 +26,7 @@ const Portfolio = () => {
 
   const portfolioArray = [
     {
-      image: Img1,
+      // image: Img1,
       video: FamebookVid,
       title: 'Social media app',
       gitHub: 'https://github.com/AndyOooh/famebook-backend',
@@ -37,28 +37,28 @@ const Portfolio = () => {
     },
     {
       image: AndyxyzImage,
-      title: 'This Website',
+      title: 'Portfolio website',
       gitHub: 'https://github.com/AndyOooh/portfolio1_egator',
       liveDemo: 'https://www.andyo.xyz/',
       type: 'Frontend',
-      technologies: 'React CSS AWS',
+      technologies: 'React css AWS react-slick',
     },
-    {
-      image: Img1,
-      title: 'portf item 3',
-      gitHub: 'https://github.com/AndyOooh/portfolio',
-      liveDemo: 'https://dribbble.com/Alien_pixels',
-      type: 'Full Stack',
-      technologies: 'NodeJS React ExpressJS MongoDB AWS NGINX',
-    },
-    {
-      image: Img1,
-      title: 'portf item 4',
-      gitHub: 'https://github.com/AndyOooh/portfolio',
-      liveDemo: 'https://dribbble.com/Alien_pixels',
-      type: 'Full Stack',
-      technologies: 'NodeJS React ExpressJS MongoDB AWS NGINX',
-    },
+    // {
+    //   image: Img1,
+    //   title: 'portf item 3',
+    //   gitHub: 'https://github.com/AndyOooh/portfolio',
+    //   liveDemo: 'https://dribbble.com/Alien_pixels',
+    //   type: 'Full Stack',
+    //   technologies: 'NodeJS React ExpressJS MongoDB AWS NGINX',
+    // },
+    // {
+    //   image: Img1,
+    //   title: 'portf item 4',
+    //   gitHub: 'https://github.com/AndyOooh/portfolio',
+    //   liveDemo: 'https://dribbble.com/Alien_pixels',
+    //   type: 'Full Stack',
+    //   technologies: 'NodeJS React ExpressJS MongoDB AWS NGINX',
+    // },
   ];
 
   const portfolio = portfolioArray.map((proj, id) => {

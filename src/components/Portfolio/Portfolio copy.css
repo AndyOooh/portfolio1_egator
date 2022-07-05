@@ -69,9 +69,8 @@
   aspect-ratio: 16/10;
 }
 
-
-
-.portfolio__item img, .portfolio__item video {
+.portfolio__item img,
+.portfolio__item video {
   aspect-ratio: 16/10;
   object-fit: contain;
 }
@@ -148,6 +147,10 @@
   .portfolio__container {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+
+  .tech-stack {
+    font-size: 0.45rem;
   }
 }
 

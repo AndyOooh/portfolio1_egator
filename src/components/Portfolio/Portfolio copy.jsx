@@ -65,7 +65,7 @@ const Portfolio = () => {
     return (
       <article
         key={id}
-        className={id === imageIndex ? 'portfolio__item activeSlide' : 'slide portfolio__item'}
+        className={id === imageIndex ? 'portfolio__item activeSlide' : 'inactiveslide portfolio__item'}
         onClick={() => sliderRef.current.slickGoTo(id)}
       >
         {proj.video ? (
@@ -79,7 +79,13 @@ const Portfolio = () => {
             playing={true}
           />
         ) : (
-          <img className='portfolio__item-image' src={proj.image} alt='' />
+          // <img className='portfolio__item-image' src={proj.image} alt='' />
+          <div
+            className='portfolio__item-image'
+            style={{
+              backgroundImage: `url(${proj.image})`,
+            }}
+          ></div>
         )}
         <div className='proj-title-type'>
           <h3>{proj.title}</h3>

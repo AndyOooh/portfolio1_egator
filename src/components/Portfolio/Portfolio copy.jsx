@@ -3,6 +3,7 @@ import { useState, useRef } from 'react';
 import ReactPlayer from 'react-player/lazy';
 import Slider from 'react-slick';
 
+import ReduxbookVid from '../../assets/myVideos/Reduxbook.mp4';
 import FamebookVid from '../../assets/myVideos/Famebook.mp4';
 import AndyxyzImage from '../../assets/myImages/anydoxyz.png';
 
@@ -26,6 +27,14 @@ const Portfolio = () => {
 
   const portfolioArray = [
     {
+      video: ReduxbookVid,
+      title: 'Redux course project',
+      gitHub: 'https://github.com/AndyOooh/redux-essentials',
+      liveDemo: 'https://redux-essentials-course.web.app/',
+      type: 'Frontend + Firebase BaaS',
+      technologies: 'React Redux Firebase',
+    },
+    {
       // image: Img1,
       video: FamebookVid,
       title: 'Social media app',
@@ -35,6 +44,7 @@ const Portfolio = () => {
       technologies: 'NodeJS React ExpressJS MongoDB AWS NGINX',
       // tags: ['NodeJS', 'React', 'ExpressJS', 'MongoDB', 'AWS', 'NGINX'],
     },
+
     {
       image: AndyxyzImage,
       title: 'Portfolio website',
@@ -51,23 +61,16 @@ const Portfolio = () => {
       type: 'Full Stack',
       technologies: 'NodeJS React ExpressJS MongoDB AWS NGINX',
     },
-    {
-      image: Img2,
-      title: 'portf item 4',
-      gitHub: 'https://github.com/AndyOooh/portfolio',
-      liveDemo: 'https://dribbble.com/Alien_pixels',
-      type: 'Full Stack',
-      technologies: 'NodeJS React ExpressJS MongoDB AWS NGINX',
-    },
   ];
 
   const portfolio = portfolioArray.map((proj, id) => {
     return (
       <article
         key={id}
-        className={id === imageIndex ? 'portfolio__item activeSlide' : 'inactiveslide portfolio__item'}
-        onClick={() => sliderRef.current.slickGoTo(id)}
-      >
+        className={
+          id === imageIndex ? 'portfolio__item activeSlide' : 'inactiveslide portfolio__item'
+        }
+        onClick={() => sliderRef.current.slickGoTo(id)}>
         {proj.video ? (
           <ReactPlayer
             url={proj.video}
@@ -84,8 +87,7 @@ const Portfolio = () => {
             className='portfolio__item-image'
             style={{
               backgroundImage: `url(${proj.image})`,
-            }}
-          ></div>
+            }}></div>
         )}
         <div className='proj-title-type'>
           <h3>{proj.title}</h3>
@@ -108,8 +110,7 @@ const Portfolio = () => {
             className='btn btn-primary'
             href={proj.liveDemo}
             target='_blank'
-            rel='noopener noreferrer'
-          >
+            rel='noopener noreferrer'>
             Live Demo
           </a>
         </div>

@@ -8,7 +8,7 @@
 .slick-slider {
   margin: 0 auto;
   width: 80%;
-  aspect-ratio: 16/10;
+  aspect-ratio: 16/12.5;
   overflow-x: hidden;
 }
 
@@ -39,6 +39,7 @@
 
 .activeSlide {
   transform: scale(1.5);
+  cursor: default;
 }
 
 /* original */
@@ -130,14 +131,14 @@
   }
   .inactiveslide {
     transform: scale(1);
-    aspect-ratio: 16/9;
+    /* aspect-ratio: 16/9; */
   }
 
   .activeSlide {
     transform: scale(1);
     z-index: 10;
     /* opacity: 1; */
-    cursor: default;
+    
   }
 }
 

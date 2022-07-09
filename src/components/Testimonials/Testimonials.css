@@ -1,6 +1,5 @@
-
 #testimonials {
-  margin-top: 4rem;
+  margin-top: -5rem;
 }
 
 .testimonials__container {
@@ -46,7 +45,18 @@
 
 /* ---------------------------------- MEDIA QUERIES (MEDIUM DEVICES) -------------------- */
 
+@media screen and (max-width: 1400px) {
+  #testimonials {
+    margin-top: 0rem;
+  }
+}
+
+/* ---------------------------------- MEDIA QUERIES (MEDIUM DEVICES) -------------------- */
+
 @media screen and (max-width: 1024px) {
+  #testimonials {
+    margin-top: 4rem;
+  }
   .testimonials__container {
     width: 60%;
   }

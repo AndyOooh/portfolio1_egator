@@ -7,6 +7,7 @@ import ReduxbookVid from '../../assets/myVideos/Reduxbook.mp4';
 import FamebookVid from '../../assets/myVideos/Famebook.mp4';
 import AndyxyzImage from '../../assets/myImages/anydoxyz.png';
 
+import redbookImg from '../../assets/myImages/theredbook.jpg';
 import Img1 from '../../assets/images/portfolio1.jpg';
 import Img2 from '../../assets/images/portfolio2.jpg';
 import './Portfolio copy.css';
@@ -54,12 +55,14 @@ const Portfolio = () => {
       technologies: 'React css AWS react-slick',
     },
     {
-      image: Img1,
-      title: 'portf item 3',
-      gitHub: 'https://github.com/AndyOooh/portfolio',
-      liveDemo: 'https://dribbble.com/Alien_pixels',
+      image: redbookImg,
+      title: 'Facebook clone',
+      gitHub: 'https://github.com/AndyOooh/redbook_backend',
+      liveDemo: 'https://www.theredbook.xyz/login',
       type: 'Full Stack',
-      technologies: 'NodeJS React ExpressJS MongoDB AWS NGINX',
+      technologies: 'ExpressJS MongoDB Redux-Toolkit RTK-Query',
+      developing: true,
+      implementations: ['Secure auth flow with refresh and access tokens'],
     },
   ];
 
@@ -81,13 +84,19 @@ const Portfolio = () => {
             muted={true}
             playing={true}
           />
+        ) : proj.developing ? (
+          <div className='overlay__wrapper portfolio__item-image'>
+            <div
+              className='portfolio__item-image overlay'
+              style={{
+                '--img': `url(${proj.image})`,
+              }}></div>
+            <div className='overlay__text'>Developing...</div>
+          </div>
         ) : (
-          // <img className='portfolio__item-image' src={proj.image} alt='' />
           <div
-            className='portfolio__item-image'
-            style={{
-              backgroundImage: `url(${proj.image})`,
-            }}></div>
+            className='portfolio__item-image overlay'
+            style={{ backgroundImage: `url(${proj.image})` }}></div>
         )}
         <div className='proj-title-type'>
           <h3>{proj.title}</h3>

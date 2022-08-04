@@ -56,6 +56,8 @@ export const myTags = [
   'NGINX',
   'SSL',
   'GPG',
+  'Google Oauth2',
+  'Nodemailer',
 ];
 
 const SkillsCloud = () => {

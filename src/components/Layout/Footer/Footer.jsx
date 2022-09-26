@@ -1,4 +1,4 @@
-import { SiCodewars, SiCodesandbox } from 'react-icons/si';
+import { SiCodewars, SiCodesandbox, SiFreecodecamp } from 'react-icons/si';
 import { BsLinkedin, BsGithub, BsStackOverflow } from 'react-icons/bs';
 
 import './Footer.jsx.css';
@@ -43,9 +43,13 @@ const Footer = () => {
         <a href='https://codesandbox.io/u/AndyOooh' target='_blank' rel='noreferrer'>
           <SiCodesandbox />
         </a>
-        <a href='https://www.linkedin.com/in/andreas-oee/' target='_blank' rel='noreferrer'>
+        <a href='https://www.linkedin.com/in/andreas-oee' target='_blank' rel='noreferrer'>
           <BsLinkedin />
         </a>
+        <a href='https://www.freecodecamp.org/andy_ohhh' target='_blank' rel='noreferrer'>
+          <SiFreecodecamp />
+        </a>
+        
       </div>
 
       <div className='footer__copyright'>

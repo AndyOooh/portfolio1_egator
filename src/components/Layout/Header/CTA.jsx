@@ -1,4 +1,5 @@
-import CV from '../../../assets/Andreas Oee Resume.pdf';
+// import CV from '../../../assets/Andreas Oee Resume.pdf';
+import CV from '../../../assets/Andreas Oee - Junior Full Stack - Resume.pdf';
 
 const CTA = () => {
   return (

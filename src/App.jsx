@@ -5,7 +5,7 @@ import Footer from './components/Layout/Footer/Footer';
 import Header from './components/Layout/Header/Header';
 import Nav from './components/Layout/Nav/Nav';
 // import Portfolio from './components/Portfolio/Portfolio';
-import Portfolio from './components/Portfolio/Portfolio copy';
+import Portfolio from './components/Portfolio/Portfolio';
 // import Services from './components/Services/Services';
 import Testimonials from './components/Testimonials/Testimonials';
 

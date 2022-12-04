@@ -26,6 +26,8 @@ header {
 .my-name {
   animation-name: example;
   animation-duration: 6s;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 @keyframes example2 {

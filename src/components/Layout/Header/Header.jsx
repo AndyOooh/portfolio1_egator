@@ -4,7 +4,7 @@ import CTA from './CTA';
 import './Header.css';
 import HeaderSocials from './HeaderSocials';
 
-const Header = () => {
+const Header = ({ textEnter, textleave }) => {
   useScrollSpy('home', '#');
 
   return (
@@ -12,7 +12,12 @@ const Header = () => {
       <div className='container header__container'>
         <div>
           <h5>Hi, my name is</h5>
-          <h1 className='my-name'>Andreas Oee</h1>
+          <h1
+            // onMouseEnter={textEnter}
+            //  onMouseLeave={textleave}
+            className='my-name'>
+            Andreas Oee
+          </h1>
           <h5 className='text-light'>
             <span className='full-stack'>Full stack</span> developer
           </h5>

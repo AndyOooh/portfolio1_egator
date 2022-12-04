@@ -1,7 +1,7 @@
 nav {
   background: rgba(0, 0, 0, 0.3);
   padding: 0.7rem 1.7rem;
-  z-index: 5;
+  z-index: 50;
   position: fixed;
   bottom: 2rem;
   /* left, translateX centers it on page. w/o transX it would start at 50%  */

@@ -1,1 +1,1 @@
-Migrated to Notion
+Migrated to Notion.

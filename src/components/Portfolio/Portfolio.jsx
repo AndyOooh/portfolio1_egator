@@ -4,14 +4,12 @@ import ReactPlayer from 'react-player/lazy';
 import Slider from 'react-slick';
 
 import ReduxbookVid from '../../assets/myVideos/Reduxbook.mp4';
-import FamebookVid from '../../assets/myVideos/Famebook.mp4';
+// import FamebookVid from '../../assets/myVideos/Famebook.mp4';
 import AndyxyzImage from '../../assets/myImages/anydoxyz.png';
-
 import redbookImg from '../../assets/myImages/theredbook.jpg';
-import redbookImg2 from '../../assets/myImages/theredbook2.jpg';
+// import redbookImg2 from '../../assets/myImages/theredbook2.jpg';
 import salaryHeroImg from '../../assets/myImages/salary_hero.png';
-import Img1 from '../../assets/images/portfolio1.jpg';
-import Img2 from '../../assets/images/portfolio2.jpg';
+import lotteryImage from '../../assets/myImages/ballot-lottery-screenshot.jpg';
 import './Portfolio.css';
 
 const Portfolio = () => {
@@ -30,13 +28,13 @@ const Portfolio = () => {
 
   const portfolioArray = [
     {
-      image: redbookImg2,
-      title: 'Facebook clone',
+      image: redbookImg,
+      title: 'Redbook',
       gitHub: 'https://github.com/AndyOooh/redbook_backend',
       liveDemo: 'https://www.theredbook.xyz/login',
       type: 'Full Stack',
       technologies: 'ExpressJS MongoDB Redux/RTK-Query',
-      developing: true,
+      // developing: true,
       implementations: ['Secure auth flow with refresh and access tokens'],
     },
     {
@@ -50,7 +48,7 @@ const Portfolio = () => {
     {
       image: salaryHeroImg,
       // video: FamebookVid,
-      title: 'Salary Hero - backend job test',
+      title: 'Salary Hero - job test',
       gitHub: 'https://github.com/AndyOooh/salary_hero',
       // liveDemo: 'https://www.connectwithfriends.sbs/',
       type: 'Backend',
@@ -59,13 +57,21 @@ const Portfolio = () => {
     },
 
     {
-      image: AndyxyzImage,
-      title: 'Portfolio website',
-      gitHub: 'https://github.com/AndyOooh/portfolio1_egator',
-      liveDemo: 'https://www.andyo.xyz/',
-      type: 'Frontend',
-      technologies: 'React AWS Firebase',
+      image: lotteryImage,
+      title: 'Lottery dApp',
+      gitHub: 'https://github.com/AndyOooh/ETHDenver-group14',
+      liveDemo: 'https://encode-client.herokuapp.com/',
+      type: 'Full Stack',
+      technologies: 'NextJS NestJS Solidity Hardhat TailwindCSS',
     },
+    // {
+    //   image: AndyxyzImage,
+    //   title: 'Portfolio website',
+    //   gitHub: 'https://github.com/AndyOooh/portfolio1_egator',
+    //   liveDemo: 'https://www.andyo.xyz/',
+    //   type: 'Frontend',
+    //   technologies: 'React AWS Firebase',
+    // },
   ];
 
   const portfolio = portfolioArray.map((proj, id) => {

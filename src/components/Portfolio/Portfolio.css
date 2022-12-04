@@ -64,7 +64,8 @@
 
 .portfolio__item-image {
   width: 100%;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
   aspect-ratio: 16/10;
 }
 

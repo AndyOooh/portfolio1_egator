@@ -80,7 +80,7 @@ const SkillsCloud = () => {
         <span className='tagcloud'></span>
         <div className='tag-list'>
           {myTags.map((tag, id) => (
-            <div>{tag}</div>
+            <div key={tag}>{tag}</div>
           ))}
         </div>
       </div>

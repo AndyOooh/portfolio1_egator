@@ -45,6 +45,7 @@
 html {
   scroll-behavior: smooth;
   /* font-size: 62.5%; */
+  /* cursor: none; */
 }
 
 ::-webkit-scrollbar {
@@ -135,6 +136,19 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+
+.cursor {
+  /* background-color: rgb(255, 255, 255); */
+  box-shadow: 0 0 0.4rem 0.2rem white;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  
 }
 
 /* ---------------------------------- MEDIA QUERIES (MEDIUM DEVICES) -------------------- */

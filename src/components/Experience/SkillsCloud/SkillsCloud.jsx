@@ -58,6 +58,11 @@ export const myTags = [
   'GPG',
   'Google Oauth2',
   'Nodemailer',
+  'Solidity',
+  'Hardhat',
+  'Ethers',
+  'OpenZeppelin',
+  'Framer-motion'
 ];
 
 const SkillsCloud = () => {
